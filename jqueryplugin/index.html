@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<br></br>
+<header><strong>Stores & Hours</strong></header>
+	<title>Stores & Hours</title>
+
+<nav>
+<ul>
+  <li><a href="indexx.html">HOME</a></li>
+  <li><a href="aboutus.html">ABOUT US</a></li>
+  <li><a href="menu.html">MENU</a></li>
+  <li><a href="contact.html">CONTACT US</a></li>
+</ul>
+      </nav>
+
+
+
+<p><strong>Please select any of our 4 great locations to view store hours and info:</strong></p>
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="jquery.lightbox.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function(){
+		    base_url = document.location.href.substring(0, document.location.href.indexOf('index.html'), 0);
+
+			$(".lightbox").lightbox({
+			    fitToScreen: true,
+			    imageClickClose: false
+		    });
+
+			$(".lightbox-2").lightbox({
+			    fitToScreen: true,
+			    scaleImages: true,
+			    xScale: 1.2,
+			    yScale: 1.2,
+			    displayDownloadLink: true
+		    });
+
+			$(".lightbox-json").lightbox({
+			    fitToScreen: true,
+			    jsonData: new Array(
+			        {url: base_url + 'images/image-1.jpg', title: 'Image 1 loaded using JSON data' },
+			        {url: base_url + 'images/image-2.jpg', title: 'Image 2 loaded using JSON data' },
+			        {url: base_url + 'images/image-3.jpg', title: 'Image 3 loaded using JSON data' },
+			        {url: base_url + 'images/image-4.jpg', title: 'Image 4 loaded using JSON data' }
+		        ),
+		        loopImages: true,
+		        imageClickClose: false,
+		        disableNavbarLinks: true
+		    });
+
+
+		});
+
+	</script>
+
+	<style type="text/css">
+		body{ color: #333; font: 13px 'Lucida Grande', Verdana, sans-serif;	}
+	</style>
+
+</head>
+<body>
+
+<h2>Princeton, NJ</h2>
+<p>32 Witherspoon Street (609) 924-0085</p>
+<a href="https://media-cdn.tripadvisor.com/media/photo-s/0a/8d/ef/c2/photo0jpg.jpg" class="lightbox" title="Photo by Unsplash"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/8d/ef/c2/photo0jpg.jpg" height="80" alt="Map of Paris" /></a>
+
+<h2>East Brunswich, NJ</h2>
+<p>3593 Route 18 South (732) 955 6026</p>
+<a href="https://cdn.shopify.com/s/files/1/0978/5450/files/about1_1024x1024_grande.jpg?6529033199309241007" class="lightbox-2" rel="flowers" title="Photo by Unpsplash"><img src="https://cdn.shopify.com/s/files/1/0978/5450/files/about1_1024x1024_grande.jpg?6529033199309241007" height="80" alt="Efile Tower" /></a>
+<a href="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/centraljersey_impact/photo/food-network-princeton-house-of-cupcakesjpg-1a7bb953e25083c0.jpg" class="lightbox-2" rel="flowers" title="Photo by Unpsplash"><img src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.nj.com/home/njo-media/width2048/img/centraljersey_impact/photo/food-network-princeton-house-of-cupcakesjpg-1a7bb953e25083c0.jpg" height="80" alt="Louvre Museum" /></a>
+<a href="https://media-cdn.tripadvisor.com/media/photo-s/0f/6c/10/ce/the-cupcake-place.jpg" class="lightbox-2" rel="flowers" title="Photo by Unpsplash"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/6c/10/ce/the-cupcake-place.jpg" height="80" alt="Arch de Triomph" /></a>
+<a href="http://cdn.shopify.com/s/files/1/0978/5450/t/3/assets/logo.png?0" class="lightbox-2" rel="flowers" title="Photo by Unpsplash"><img src="http://cdn.shopify.com/s/files/1/0978/5450/t/3/assets/logo.png?0" height="80" alt="City Streets" /></a>
+
+
+<h2>Clifton, NJ</h2>
+<p>700 Route 3 West, Unit #8 (862) 225-9536</p>
+<a href="https://cdn.shopify.com/s/files/1/0978/5450/files/location_b98351cc-52eb-4497-a2ff-026d332602c1_grande.jpg?11270704205105730114" class="lightbox-2" rel="flowers" title="Photo by Unpsplash"><img src="https://cdn.shopify.com/s/files/1/0978/5450/files/location_b98351cc-52eb-4497-a2ff-026d332602c1_grande.jpg?11270704205105730114" height="80" alt="Arch de Triomph" /></a>
+
+<br></br>
+<br></br>
+
+<h2>Official Link to Official Website</h2>
+<ul>
+<li>House of Cupcakes</li>
+<a id="links" href="https://houseofcupcakes.com">Click Link Here!</a>
+
+
+
+</body>
+</html>
