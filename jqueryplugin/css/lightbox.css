@@ -154,10 +154,17 @@ header{
 p{
   font-size: 20px;
 font-family: 'Cairo', sans-serif;
+  text-align: left;
+  background: silver;
+  color:black;
+}
+
+h1{
+  font-size: 20px;
+font-family: 'Cairo', sans-serif;
   text-align: center;
   background: silver;
   color:black;
-
 }
 
 h2{
@@ -165,7 +172,7 @@ h2{
   font-family: 'Cairo', sans-serif;
   background: silver;
   color: orange;
-  text-align: center;
+  text-align: left;
 }
 
 ul {
@@ -188,7 +195,6 @@ li a {
   text-decoration: none;
   color: black;
   font-family: 'Cairo', sans-serif;
-
 }
 
 li a:hover {
